@@ -1,0 +1,1 @@
+{"pagination":{"limit":100,"offset":0,"count":69,"total":69},"data":[{"name":"NASDAQ Stock Exchange","acronym":"NASDAQ","mic":"XNAS","country":"USA","country_code":"US","city":"New York","website":"www.nasdaq.com","timezone":{"timezone":"America\/New_York","abbr":"EST","abbr_dst":"EDT"},"currency":{"code":"USD","symbol":"$","name":"US Dollar"}}]}

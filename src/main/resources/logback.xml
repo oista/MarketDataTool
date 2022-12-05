@@ -1,0 +1,29 @@
+<!-- https://eax.me/scala-logging/ -->
+
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>
+        %date %-5level [%thread] %logger{128} - %msg%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>arbitrager_main.log</file>
+    <encoder>
+      <pattern>
+        %date %-5level [%thread] %logger{128} - %msg%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
+  </root>
+  
+  <logger name="org.apache.spark" level="ERROR" />
+  <logger name="org.sparkproject.jetty" level="ERROR" />
+  <logger name="org.apache.spark" level="ERROR" />
+</configuration>
