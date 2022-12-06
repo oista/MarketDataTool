@@ -63,8 +63,8 @@ object MainProducer extends App {
       .option("kafka.bootstrap.servers", config.getString("input.bootstrap.servers"))
       .option("topic", exchange)
       .save()
-    
-    logger.info(s"query sent to topic - : $exchange")
+
+    logger.info(s"query sent to kafka topic - : $exchange")
   }
 
   def send_query_to_kafka(p_query:String): Unit ={
