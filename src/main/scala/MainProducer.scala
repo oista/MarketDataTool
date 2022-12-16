@@ -1,8 +1,12 @@
 
+import DataStructures.DataEoD
 import PG_Connect._
 import com.typesafe.scalalogging._
 import org.slf4j.LoggerFactory
 import com.typesafe.config.ConfigFactory
+import io.confluent.kafka.serializers.KafkaAvroSerializer
+import org.apache.avro.Schema
+import org.apache.avro.reflect.AvroSchema
 import org.apache.spark.sql.functions.{array, col, lit}
 import org.apache.spark.sql.types.StringType
 import org.apache.spark.sql.SparkSession
@@ -19,6 +23,9 @@ object MainProducer extends App {
   val ticket_list    = config.getString("tickers_list").split(",").toList
   val exchange_list  = config.getString("exchanges_list").split(",").toList
   val dates_list     = config.getString("tradedate_list").split(",").toList
+
+
+  //val DataEoDSchema: Schema = AvroSchema[DataEoD]
 
 
   implicit val  spark = SparkSession.builder()
