@@ -26,10 +26,9 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0">
-        <schema name="information_schema" object-types="table, view, sequence, function" />
         <schema name="m_data" object-types="table, view, sequence, function, constraint, index, column, dataset trigger" />
-        <schema name="pg_catalog" object-types="table, view, function" />
-        <schema name="public" object-types="table, view, function" />
+        <schema name="pg_catalog" object-types="function" />
+        <schema name="public" object-types="function" />
       </connection>
     </loaded-nodes>
   </component>
@@ -76,7 +75,10 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" object-ref="schemas/m_data/tables/dim_securities" />
+      <object connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" object-ref="schemas/m_data/tables/t_source_marketdata" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" />
@@ -89,7 +91,11 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_online_arbitrage" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_online_arbitrage_prod" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_online_arbitrage_wide" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.t_source_marketdata" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.t_source_marketdata" active-filter-id="913277f9-ec6a-4285-970f-f95ef67a10c3">
+      <filter id="913277f9-ec6a-4285-970f-f95ef67a10c3" name="FB" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="symbol" operator="=" value="FB" active="true" />
+      </filter>
+    </filter-actions>
     <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.dim_exchanges" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.dim_securities" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.t_source_marketdata_short" active-filter-id="EMPTY_FILTER" />

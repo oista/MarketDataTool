@@ -76,19 +76,21 @@ object MainDataLoader  {
     var offset = 0
     val max_page_amount = 9999
     var total_amount = BigInt(0)
-    var page_amount = BigInt(1)
+    var page_amount  = BigInt(1)
     var current_page = BigInt(0)
 
     def inc_next_page: Unit = {
-      current_page = current_page+1
-      offset = offset + page_size
-      logger.info(s"Gurrent page set to $current_page")
+      if (current_page<=page_amount) {
+        current_page = current_page + 1
+        offset = offset + page_size
+        logger.info(s"Current page set to $current_page (of $page_amount). Offset - $offset. TotalRowCount - $total_amount.")
+      }
     }
 
 
     def set_total_amount(row_amount :BigInt): Unit = {
       total_amount = row_amount
-      page_amount = row_amount/page_size
+      page_amount = (row_amount/page_size)+1
       logger.info(s"Total amount of rows in request set to $total_amount")
       logger.info(s"Page amount set to $page_amount rows")
     }
@@ -111,7 +113,7 @@ object MainDataLoader  {
     ilist.ticket_list.foreach( c_ticket =>
       ilist.exchange_list.foreach(c_exchange => {
        for (p <- 1 to pages.max_page_amount) {
-        if (pages.current_page<=pages.max_page_amount) {
+        if (pages.current_page<=pages.page_amount) {
          var js_block = ""
          ilist.data_type match {
            case "EOD" => js_block = getEoDRequest(ilist.eod_uri + "?limit=" + pages.page_size + "&offset=" + pages.offset, c_ticket, c_exchange, ilist.first_dt, ilist.last_dt) // End of day data
@@ -203,7 +205,7 @@ object MainDataLoader  {
   def parse_json_header_eod(js_body: String, pages: => paginator): DataFrame ={
     implicit val eod_codec: JsonValueCodec[StockData] = JsonCodecMaker.make
     val js = readFromArray(js_body.getBytes("UTF-8"))
-    if (pages.page_amount==0) {
+    if (pages.current_page==0) {
       pages.set_total_amount(js.pagination.total)}
     js.data.toDF()
   }
