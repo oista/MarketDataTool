@@ -1,0 +1,5 @@
+package ExternalWorker
+
+class SparkWorker   {
+
+}
