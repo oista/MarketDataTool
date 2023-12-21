@@ -15,13 +15,13 @@ object MainApp extends {
   val logger = Logger(LoggerFactory.getLogger(this.getClass))
 
    def main(args: Array[String]) : Unit = {
-     val controller = new Coordinator()
-     val sdata = controller.LoadData
-     controller.SaveData(sdata)
+    // val controller = new Coordinator()
+    // val sdata = controller.LoadData
+    // controller.SaveData(sdata)
 
-     //  val pgs = new PSGLoader("t_source_marketdata")
-      // val pdata = pgs.loadDF()//pgs.loadDataStruct()
-      //pdata.show()
+       val pgs = new PSGLoader("t_source_marketdata")
+       val pdata = pgs.loadDF()//pgs.loadDataStruct()
+     pdata.show()
 
    }
 
