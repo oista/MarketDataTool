@@ -1,4 +1,5 @@
 package DataStructures
+import org.apache.spark.sql.DataFrame
 
 case class Pagination(
 limit:  BigInt,
@@ -17,29 +18,29 @@ high: Double,
 low: Double,
 close: Double,
 volume: Double,
-adj_open: String,//Double,
-adj_high: String, //Double,
+adj_open: Double,
+adj_high: Double,
 adj_low: Double,
 adj_close: Double,
-adj_volume: Double )
+adj_volume: Double ) extends DataStruct
 
 // End-of_day data
-case class DataEoD(
+case class DataEoD  (
 open: Double,
 high: Double,
 low: Double,
 close: Double,
 volume: Double,
-adj_high:   Option[String],
-adj_low:    Option[String],
+adj_high:   Option[Double],
+adj_low:    Option[Double],
 adj_close:  Option[Double],
-adj_open:   Option[String],
-adj_volume: Option[String],
+adj_open:   Option[Double],
+adj_volume: Option[Double],
 split_factor: Double,
 dividend: Double,
 symbol: String,
 exchange: String,
-date: String)
+date: String) extends DataStruct
 
 case class Intraday (
 date: String,
@@ -51,7 +52,7 @@ low: Option[Double],
 close: Option[Double],
 last: Option[Double],
 volume: Option[Double]
-)
+) extends DataStruct
 
 
 case class Currency (
@@ -73,17 +74,25 @@ country_code: Option[String],
 city:         Option[String],
 website:      Option[String],
 timezone:     Option[Timezone],
-currency:     Option[Currency])
+currency:     Option[Currency]) extends DataStruct
 
 case class Ticker(
   name:   Option[String],
   symbol: Option[String],
-  stock_exchange : Option[Exchange])
+  stock_exchange : Option[Exchange]) extends DataStruct
 
-case class StockData(pagination: Pagination, data: Seq[DataEoD])
-case class IntradayData(pagination: Pagination, data: Seq[Intraday])
-case class ExchangeData(pagination: Pagination, data: Seq[Exchange])
-case class TickersData(pagination: Pagination, data: Seq[Ticker])
+case class StockData(pagination: Pagination, data: Seq[DataEoD]) extends StreamStruct {
+val sdata = data
+}
+
+case class IntradayData(pagination: Pagination, data: Seq[Intraday]) extends StreamStruct{
+ val sdata = data
+}
+case class ExchangeData(pagination: Pagination, data: Seq[Exchange]) extends StreamStruct{
+  val sdata = data
+}
+case class TickersData(pagination: Pagination, data: Seq[Ticker]) extends StreamStruct{
+  val sdata = data}
 
 
 case class ExchTest(
@@ -96,16 +105,6 @@ case class ExchTest(
       name:         Option[String],
       timezone:     Option[Timezone],
       website:      Option[String]
-
                     )
-//object  ExchTest {
-//  def apply(a: Array[String]): ExchTest =
-//    ExchTest(
-//      a(0),
-//      a(1),
-//      a(2),
-//      a(3),
-//      a(4),
-//      a(5)
-//    )}
+
 

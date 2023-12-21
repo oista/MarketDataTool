@@ -12,23 +12,31 @@
       <quote-values-containing-separator value="true" />
       <quote-all-values value="false" />
       <value-separator value="" />
-      <file-name value="" />
-      <file-location value="" />
+      <file-name value="t_source_marketdata.xls" />
+      <file-location value="F:\!DOWN" />
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
+      <charset value="windows-1251" />
       <charset value="windows-1251" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes>
+      <connection connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa">
+        <schema name="information_schema" object-types="table, view, sequence, function" />
+        <schema name="pg_catalog" object-types="table, view, sequence, function" />
+        <schema name="pg_toast" object-types="table, view, sequence, function" />
+        <schema name="public" object-types="table, view, sequence, function" />
+      </connection>
       <connection connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0">
+        <schema name="information_schema" object-types="table, view, sequence, function" />
         <schema name="m_data" object-types="table, view, sequence, function, constraint, index, column, dataset trigger" />
-        <schema name="pg_catalog" object-types="function" />
-        <schema name="public" object-types="function" />
+        <schema name="pg_catalog" object-types="table, view, function" />
+        <schema name="public" object-types="table, view, function" />
       </connection>
     </loaded-nodes>
   </component>
@@ -72,11 +80,16 @@ delete from T_SOURCE_MARKETDATA;
 
 
 select count(*) from T_SOURCE_MARKETDATA;]]></console>
+      <console name="Postgres_m_user 1" type="STANDARD" schema="m_data" session="Main"><![CDATA[select * from m_data.t_source_marketdata 
+
+order by date desc]]></console>
     </connection>
+  </component>
+  <component name="DBNavigator.Project.DatabaseEditorStateManager">
+    <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" object-ref="schemas/m_data/tables/dim_securities" />
       <object connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" object-ref="schemas/m_data/tables/t_source_marketdata" />
     </open-files>
   </component>
@@ -85,20 +98,16 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
     <connection id="daa94e0d-4af4-492b-8964-50e6442de7a0" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.t_source_marketdata" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.dim_exchanges" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.dim_securities" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.t_source_marketdata_short" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_batch_period" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_test" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_online_arbitrage_wide1" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_online_arbitrage" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_online_arbitrage_prod" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="7b21c005-d368-4b0c-a69a-86c5017d5ffa" dataset="public.t_ind_online_arbitrage_wide" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.t_source_marketdata" active-filter-id="913277f9-ec6a-4285-970f-f95ef67a10c3">
-      <filter id="913277f9-ec6a-4285-970f-f95ef67a10c3" name="FB" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="symbol" operator="=" value="FB" active="true" />
-      </filter>
-    </filter-actions>
-    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.dim_exchanges" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.dim_securities" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="daa94e0d-4af4-492b-8964-50e6442de7a0" dataset="m_data.t_source_marketdata_short" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -135,19 +144,21 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="14.0" />
-          <driver-source value="BUILTIN" />
+          <driver-source value="BUNDLED" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
           <database value="mrktdata_pg" />
+          <tns-folder value="" />
+          <tns-profile value="" />
           <type value="USER_PASSWORD" />
           <user value="pguser" />
           <deprecated-pwd value="cGdwc3c4OA==" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />
@@ -181,7 +192,14 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
+        <debugger>
+          <compile-dependencies value="true" />
+          <tcp-driver-tunneling value="false" />
+          <tcp-host-address value="" />
+          <tcp-port-from value="4000" />
+          <tcp-port-to value="4999" />
+        </debugger>
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
           <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -219,13 +237,15 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="14.0" />
-          <driver-source value="BUILTIN" />
+          <driver-source value="BUNDLED" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
           <database value="m_db" />
+          <tns-folder value="" />
+          <tns-profile value="" />
           <type value="USER_PASSWORD" />
           <user value="m_user" />
           <deprecated-pwd value="bV91c2Vy" />
@@ -265,7 +285,14 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="true">
+        <debugger>
+          <compile-dependencies value="true" />
+          <tcp-driver-tunneling value="false" />
+          <tcp-host-address value="" />
+          <tcp-port-from value="4000" />
+          <tcp-port-to value="4999" />
+        </debugger>
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
           <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -447,6 +474,7 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
       <confirmations>
         <save-changes value="false" />
         <revert-changes value="true" />
+        <exit-on-changes value="ASK" />
       </confirmations>
     </code-editor-settings>
     <code-completion-settings>
@@ -647,7 +675,6 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
       </compiler>
       <debugger>
         <debugger-type value="ASK" />
-        <use-generic-runners value="true" />
       </debugger>
     </operation-settings>
     <ddl-file-settings>
@@ -697,5 +724,6 @@ select count(*) from T_SOURCE_MARKETDATA;]]></console>
   </component>
   <component name="DBNavigator.Project.StatementExecutionManager">
     <execution-variables />
+    <execution-variable-types />
   </component>
 </project>
