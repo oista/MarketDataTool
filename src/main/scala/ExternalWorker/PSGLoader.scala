@@ -10,7 +10,7 @@ import java.sql.ResultSet
 
 class PSGLoader(val table_name:String) {
   val logger = Logger(LoggerFactory.getLogger(this.getClass))
-  logger.info(s"Create PSGWorker for $schema.$table_name table")
+  logger.info(s"Create PSGLoader for $schema.$table_name table")
   val plist = SettingStorage.param_list
   val clist = SettingStorage.conf_list
   val schema = clist.pgs_sch
@@ -20,7 +20,6 @@ class PSGLoader(val table_name:String) {
   def saveDF(cdata: DataFrame) = {
     val rows = cdata.count()
     logger.info(s"PSGLoader: start write $rows rows to $schema.$table_name");
-    cdata.show()
     cdata.write.format("jdbc")
       .option("url",     PG_Connect.pgs_url)
       .option("user",    PG_Connect.pgs_usr)

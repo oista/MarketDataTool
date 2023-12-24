@@ -50,10 +50,9 @@ class ExtSystem(val name:String) {
 }
 
 trait ExtProducer extends ExtWorker {
- def produceStructData(): List[StreamStruct];
- // def chainOfproduce()
+ def produceStructData(): Seq[StreamStruct];
 }
 
 trait ExtConsumer extends ExtWorker {
-  def consumeStructData(sdata: List[StreamStruct]):String;
+  def consumeStructData(sdata: Seq[StreamStruct]):String;
 }

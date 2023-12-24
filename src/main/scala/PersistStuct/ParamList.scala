@@ -29,12 +29,8 @@ class ParamList  extends ASettingsList {
 
   val first_dt = autodate match {
     case null => dates_list.head
-    case _    => cl.getDateMinusN(last_dt, autodate_n.toInt)
-     }
+    case _    => cl.getDateMinusN(last_dt, autodate_n.toInt)}
 
-
-//    val first_dt = dates_list.head
-  //  val last_dt = dates_list.last
 
 
   var trParams = for {

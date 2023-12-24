@@ -13,7 +13,7 @@ class Coordinator () {
   val consumer = factory.get_consumer()
 
 
-def LoadData: List[StreamStruct] = {
+def LoadData: Seq[StreamStruct] = {
   val pr_data = producer.produceStructData()
   logger.info("Coordinator.LoadData: loaded data is...")
   DataTransformer.StructToDF(pr_data).show()
@@ -21,7 +21,7 @@ def LoadData: List[StreamStruct] = {
   pr_data
 }
 
-  def SaveData(sdata : List[StreamStruct]) = {
+  def SaveData(sdata : Seq[StreamStruct]) = {
     consumer.consumeStructData(sdata)
     logger.info("Coordinator.SaveData: successfully DONE")
   }

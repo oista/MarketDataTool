@@ -4,7 +4,7 @@ import DataStructures.{ StreamStruct}
 import PersistStuct.{DataTransformer, SettingStorage}
 import com.typesafe.config.ConfigFactory
 
-class PSGWorker extends ExtConsumer   {
+class PSGWorker extends ExtConsumer with ExtProducer   {
   val clist  = SettingStorage.getConfList
   val plist  = SettingStorage.getParamList
   logger.info(s"PSGLoader: connection for user $clist.pgs_usr");
@@ -14,13 +14,20 @@ class PSGWorker extends ExtConsumer   {
   stream_type match {
   case "EOD"=>"t_source_marketdata"}}
 
-  override def consumeStructData(sdata: List[StreamStruct]) = {
+  override def consumeStructData(sdata: Seq[StreamStruct]) = {
     val df = DataTransformer.StructToDF(sdata)
     val pg_loader = new PSGLoader(getTableName(plist.data_type))
     pg_loader.saveDF(df)
     logger.info(s"PSGLoader: consume StructData complete");
     "OK"}
 
+  override def produceStructData(): Seq[StreamStruct] = {
+    val pg_loader = new PSGLoader(getTableName(plist.data_type))
+    val sdata = pg_loader.loadDataStruct()
+    val res: Seq[StreamStruct] = DataTransformer.StreamStructToDataStruct(sdata)
+    logger.info(s"PSGLoader: consume StructData complete");
+    res
+  }
 }
 
 object PG_Connect {

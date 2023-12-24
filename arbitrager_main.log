@@ -7737,3 +7737,538 @@ Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are un
 2023-12-21 20:01:07,168 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
 2023-12-21 20:01:07,192 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDF: list size is 223
 2023-12-21 20:01:07,492 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-21 20:16:11,070 INFO  [main] ExternalWorker.PSGLoader - Create PSGWorker for null.t_source_marketdata table
+2023-12-21 20:16:11,646 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-21 20:16:11,669 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDF: list size is 223
+2023-12-21 20:16:11,971 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 15:55:21,219 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 15:55:21,223 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 15:55:21,583 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 15:55:21,996 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 15:55:23,563 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 15:55:23,564 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 15:55:23,564 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 15:55:31,302 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: start
+2023-12-24 16:01:01,518 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 16:01:01,521 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 16:01:01,863 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 16:01:02,167 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 16:01:03,430 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 16:01:23,456 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 16:01:23,459 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 16:01:23,769 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 16:01:24,076 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 16:01:25,284 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 16:02:57,961 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 16:02:57,965 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 16:02:58,292 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 16:02:58,605 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 16:02:59,837 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 16:03:10,922 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 16:03:10,923 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 16:03:16,129 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: start
+2023-12-24 16:28:51,298 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 16:28:51,301 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 16:28:51,621 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 16:28:51,947 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 16:28:53,185 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 16:29:04,110 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 16:29:04,111 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 17:05:08,685 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:05:08,688 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 17:05:09,005 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 17:05:09,314 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 17:05:10,565 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 17:05:21,627 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:05:21,628 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 17:05:26,918 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: start
+2023-12-24 17:20:06,769 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:20:06,772 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 17:20:07,101 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 17:20:07,414 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 17:20:08,654 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 17:20:19,960 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:20:19,960 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 17:20:25,570 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: start
+2023-12-24 17:24:03,023 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:24:03,026 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 17:24:03,360 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 17:24:03,662 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 17:24:04,895 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 17:24:15,987 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:24:15,988 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 17:24:22,785 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: start
+2023-12-24 17:28:53,354 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:28:53,358 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 17:28:53,683 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 17:28:54,005 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 17:28:55,244 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 17:29:06,476 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:29:06,477 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 17:29:13,975 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: start
+2023-12-24 17:29:15,115 INFO  [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-12-24 17:29:15,188 INFO  [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka version: 6.2.1-ccs
+2023-12-24 17:29:15,188 INFO  [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: fa4bec046a2df3a6
+2023-12-24 17:29:15,188 INFO  [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1703428155185
+2023-12-24 17:29:17,251 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:17,252 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:19,409 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:19,409 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:21,569 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:21,569 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:23,851 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:23,853 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:26,384 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:26,385 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:29,101 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:29,101 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:32,255 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:32,256 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:35,225 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:35,225 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:38,263 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:38,264 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:41,480 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:41,480 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:44,628 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:44,628 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:47,589 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:47,589 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:50,672 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:50,672 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:53,875 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:53,875 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:56,850 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:56,850 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:29:59,996 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:29:59,996 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:30:03,209 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:30:03,209 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:30:06,405 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:30:06,406 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:30:09,556 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:30:09,557 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:30:12,770 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-12-24 17:30:12,770 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-12-24 17:30:15,207 ERROR [Executor task launch worker for task 1.0 in stage 2.0 (TID 3)] org.apache.spark.executor.Executor - Exception in task 1.0 in stage 2.0 (TID 3)
+org.apache.kafka.common.errors.TimeoutException: Topic result not present in metadata after 60000 ms.
+2023-12-24 17:30:15,207 ERROR [Executor task launch worker for task 0.0 in stage 2.0 (TID 2)] org.apache.spark.executor.Executor - Exception in task 0.0 in stage 2.0 (TID 2)
+org.apache.kafka.common.errors.TimeoutException: Topic result not present in metadata after 60000 ms.
+2023-12-24 17:30:15,223 ERROR [task-result-getter-2] org.apache.spark.scheduler.TaskSetManager - Task 0 in stage 2.0 failed 1 times; aborting job
+2023-12-24 17:37:03,101 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:37:03,104 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 17:37:03,416 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 17:37:03,749 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 17:37:05,015 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 17:37:19,729 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 17:37:19,731 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 17:37:27,197 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: start
+2023-12-24 17:37:29,225 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-12-24 17:37:29,314 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka version: 6.2.1-ccs
+2023-12-24 17:37:29,314 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: fa4bec046a2df3a6
+2023-12-24 17:37:29,314 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1703428649311
+2023-12-24 17:37:29,858 WARN  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {result=LEADER_NOT_AVAILABLE}
+2023-12-24 17:37:29,860 INFO  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 91vz2Xd7QlCFfEzc-lnSCg
+2023-12-24 17:37:32,279 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: finish
+2023-12-24 18:02:04,089 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 18:02:04,093 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 18:02:04,407 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 18:02:04,725 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 18:02:06,012 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 18:02:17,643 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 18:02:17,643 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 18:02:22,175 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: result start
+2023-12-24 18:02:23,396 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-12-24 18:02:23,449 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.common.utils.AppInfoParser - Kafka version: 6.2.1-ccs
+2023-12-24 18:02:23,450 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: fa4bec046a2df3a6
+2023-12-24 18:02:23,450 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1703430143448
+2023-12-24 18:02:23,682 INFO  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 91vz2Xd7QlCFfEzc-lnSCg
+2023-12-24 18:02:25,472 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: result finish
+2023-12-24 18:03:54,014 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 18:03:54,017 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 18:03:54,339 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 18:03:54,668 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 18:03:55,929 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 18:04:09,002 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 18:04:09,003 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 18:04:15,149 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: marketdata start
+2023-12-24 18:04:16,388 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-12-24 18:04:16,445 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka version: 6.2.1-ccs
+2023-12-24 18:04:16,445 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: fa4bec046a2df3a6
+2023-12-24 18:04:16,445 INFO  [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1703430256444
+2023-12-24 18:04:16,662 INFO  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 91vz2Xd7QlCFfEzc-lnSCg
+2023-12-24 18:04:18,464 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: marketdata finish
+2023-12-24 18:06:58,536 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 18:06:58,539 INFO  [main] ExternalWorker.PSGLoader - Create PSGLoader for null.t_source_marketdata table
+2023-12-24 18:06:58,869 INFO  [main] ExternalWorker.PSGLoader - PSGLoader.loadDataStruct: start load for m_data.t_source_marketdata table
+2023-12-24 18:06:59,184 WARN  [main] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-12-24 18:07:00,467 INFO  [main] ExternalWorker.PSGWorker - PSGLoader: consume StructData complete
+2023-12-24 18:07:11,959 INFO  [main] ExternalWorker.KafkaWorker - PSGLoader: connection for user PersistStuct.ConfigList@27e47833.pgs_usr
+2023-12-24 18:07:11,961 INFO  [main] ExternalWorker.KafkaLoader - Create KafkaLoader
+2023-12-24 18:07:16,511 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: marketdata start
+2023-12-24 18:07:17,715 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-12-24 18:07:17,776 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.common.utils.AppInfoParser - Kafka version: 6.2.1-ccs
+2023-12-24 18:07:17,776 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: fa4bec046a2df3a6
+2023-12-24 18:07:17,776 INFO  [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1703430437774
+2023-12-24 18:07:18,011 INFO  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 91vz2Xd7QlCFfEzc-lnSCg
+2023-12-24 18:07:19,779 INFO  [main] ExternalWorker.KafkaLoader - KafkaLoader.loadDFToTopic: marketdata finish
