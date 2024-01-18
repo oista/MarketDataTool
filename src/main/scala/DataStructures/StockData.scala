@@ -42,6 +42,15 @@ symbol: String,
 exchange: String,
 date: String) extends DataStruct
 
+object  DataEoD {
+  def apply(open: Double, high: Double, low: Double, close: Double, volume: Double,
+            adj_high: Option[Double], adj_low: Option[Double], adj_close: Option[Double],
+            adj_open: Option[Double], adj_volume: Option[Double], split_factor: Double,
+            dividend: Double, symbol: String, exchange: String, date:String): DataEoD =
+    DataEoD(open, high, low, close, volume, adj_high, adj_low, adj_close,
+      adj_open, adj_volume, split_factor, dividend, symbol, exchange, date)}
+
+
 case class Intraday (
 date: String,
 symbol: String,

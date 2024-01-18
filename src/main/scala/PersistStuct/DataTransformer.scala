@@ -1,11 +1,9 @@
 package PersistStuct
 
 import DataStructures.{DataEoD, DataStruct, StockData, StreamStruct}
-import org.apache.spark.sql.functions.{ col, struct}
-import org.apache.spark.sql.types.StringType
+import org.apache.spark.sql.functions.{col, struct, to_json}
 import org.apache.spark.sql.{DataFrame, Encoders, Row, SparkSession}
-
-import scala.collection.immutable.List
+import org.apache.spark.sql.functions._
 
 
 object DataTransformer {
@@ -23,10 +21,10 @@ object DataTransformer {
 
   // Stream to Data : -----------------------------------------------
 
-  def StructToDF(sSeq: Seq[StreamStruct]) = {
+  def StructToDF(sSeq: Seq[StreamStruct]) : DataFrame = {
     SdataToDF(StructToData(sSeq), param_list.data_type)}
 
-  def StructToData(sSeq: Seq[StreamStruct]):Seq[Seq[DataStruct]] = {
+  def StructToData(sSeq: Seq[StreamStruct]) : Seq[Seq[DataStruct]] = {
     for (p <- sSeq) yield {
       p.sdata}}
 
@@ -47,48 +45,39 @@ object DataTransformer {
   }
 
   //  Data to Stream: ------------------------------
-  def StreamStructToDataStruct(stream: Seq[DataStruct]) : Seq[StreamStruct] = {
+  def DataStructToStreamStruct(stream: Seq[DataStruct]) : Seq[StreamStruct] = {
     for (p <- stream) yield {
       new StockData(null,stream.asInstanceOf[List[DataEoD]])
     }
   }
 
-  // ------------------------------------------------
-  def mergeColumns(row: Row) = {
-    val column1 = row.getAs[String]("column1")
-    val column2 = row.getAs[String]("column2")
-    (column1, column2)
+  def DFtoStreamStruct(src_df: DataFrame) = {
+    val resDS = DFtoDataStruct(src_df)
+    val resSS = DataStructToStreamStruct(resDS)
+    resSS
+  }
+  def DFtoDataStruct(src_df:DataFrame) = {
+    val resDF = src_df.as[DataEoD]
+    val resDS = resDF.map(r => DataEoD(r.open, r.high, r.low, r.close, r.volume,
+      r.adj_high, r.adj_low, r.adj_close, r.adj_open, r.adj_volume, r.split_factor,
+      r.dividend, r.symbol, r.exchange, r.date)).collect().toSeq
+    resDS
   }
 
-  def mergeDFforKafka(src_df:DataFrame):DataFrame = {
+  def mergeDFforKafka(src_df: DataFrame): DataFrame = {
     var res_df: DataFrame = null
     param_list.data_type match {
 
-      case "EOD" => res_df = src_df.withColumn("value",
-        struct(col("open"),
-          col("high"),
-          col("low"),
-          col("close"),
-          col("volume"),
-          col("adj_high"),
-          col("adj_low"),
-          col("adj_close"),
-          col("adj_open"),
-          col("adj_volume"),
-          col("split_factor"),
-          col("dividend"),
-          col("symbol"),
-          col("exchange"),
-          col("date")).cast(StringType)
-      )
+      case "EOD" => res_df =
+        src_df
+          .withColumn("key",lit("1"))
+          .withColumn("value", to_json(struct("open", "high", "low",
+          "close", "volume", "adj_high", "adj_low", "adj_close", "adj_open", "adj_volume",
+          "split_factor", "dividend", "symbol", "exchange","date")))
+          .select("key", "value")
+
     }
     res_df
-  }
-
-  def DFtoDataStruct(src_df:DataFrame) = {
-    val cEncoder = Encoders.bean(DataEoD.getClass)
-    val resDF = src_df.as[DataEoD](cEncoder)
-    resDF
   }
 }
 

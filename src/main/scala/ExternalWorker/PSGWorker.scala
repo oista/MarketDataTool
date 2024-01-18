@@ -24,8 +24,8 @@ class PSGWorker extends ExtConsumer with ExtProducer   {
   override def produceStructData(): Seq[StreamStruct] = {
     val pg_loader = new PSGLoader(getTableName(plist.data_type))
     val sdata = pg_loader.loadDataStruct()
-    val res: Seq[StreamStruct] = DataTransformer.StreamStructToDataStruct(sdata)
-    logger.info(s"PSGLoader: consume StructData complete");
+    val res: Seq[StreamStruct] = DataTransformer.DataStructToStreamStruct(sdata)
+    logger.info(s"PSGLoader: produce StructData complete");
     res
   }
 }

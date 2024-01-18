@@ -21,6 +21,8 @@ object MainApp extends {
   val logger = Logger(LoggerFactory.getLogger(this.getClass))
 
    def main(args: Array[String]) : Unit = {
+     val logger = Logger(LoggerFactory.getLogger(this.getClass))
+     logger.info(s"MainApp: start MainApp")
      // web:
    //  val controller = new Coordinator()
   //   val sdata = controller.LoadData
@@ -30,12 +32,18 @@ object MainApp extends {
      val pgsw = new PSGWorker()
      val cdata = pgsw.produceStructData()
      val cdf = DataTransformer.StructToDF(cdata)
-     cdf.show()
+     cdf.show(10)
+     logger.info(s"MainApp: PGSWorker read data from DB FINISH")
 
-     // kafka:
+     // kafka post:
      val kfkw = new KafkaWorker
      kfkw.consumeStructData(cdata)
+     logger.info(s"MainApp: KafkaWorker produce data FINISH")
 
+     // kafka get:
+     val kdata =  DataTransformer.StructToDF(kfkw.produceStructData())
+     kdata.show(10)
+     logger.info(s"MainApp: KafkaWorker consume data FINISH")
 
    }
 

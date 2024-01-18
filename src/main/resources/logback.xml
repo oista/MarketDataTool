@@ -26,4 +26,5 @@
   <logger name="org.apache.spark" level="ERROR" />
   <logger name="org.sparkproject.jetty" level="ERROR" />
   <logger name="org.apache.spark" level="ERROR" />
+  <logger name="org.apache.kafka" level="ERROR"/>
 </configuration>
